@@ -10,7 +10,7 @@ export default function PostScreen() {
       <View style={styles.header}>
         <View style={styles.userInfo}>
           <ProfilePlaceholder style={styles.profilePlaceholder} />
-          <Text>rbeggs</Text>
+          <Text style={styles.username}>rbeggs</Text>
         </View>
         <Text style={styles.date}>September 19</Text>
       </View>
@@ -42,7 +42,7 @@ export default function PostScreen() {
       <View style={styles.header}>
         <View style={styles.userInfo}>
           <ProfilePlaceholder style={styles.profilePlaceholder} />
-          <Text>philip_ye</Text>
+          <Text style={styles.username}>philip_ye</Text>
         </View>
         <Text style={styles.date}>September 20</Text>
       </View>
@@ -53,7 +53,7 @@ export default function PostScreen() {
       <View style={styles.header}>
         <View style={styles.userInfo}>
           <ProfilePlaceholder style={styles.profilePlaceholder} />
-          <Text>vppraggie</Text>
+          <Text style={styles.username}>vppraggie</Text>
         </View>
         <Text style={styles.date}>September 21</Text>
       </View>
