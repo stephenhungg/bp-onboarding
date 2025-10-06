@@ -67,7 +67,11 @@ export const styles = StyleSheet.create({
   commentContent: {
     paddingLeft: 40,
     paddingRight: 10,
+    width: '100%',
     marginTop: 10,
     marginBottom: 10,
+  },
+  username: {
+    fontWeight: 'bold',
   },
 });
