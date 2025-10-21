@@ -7,16 +7,15 @@ export const styles = StyleSheet.create({
     marginBottom: 12,
   },
   container: {
-    flex: 1,
     flexDirection: 'column',
     alignItems: 'center',
-    backgroundColor: 'white',
   },
   postImage: {
     width: 375,
     height: 250,
     marginVertical: 10,
     borderRadius: 10,
+    alignSelf: 'center',
   },
   header: {
     flexDirection: 'row',
@@ -54,24 +53,31 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  activityShare: {
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
   activityLikesIcon: {
     marginRight: 8,
   },
   activityLikesText: {
     fontWeight: 'bold',
   },
-  commentContent: {
-    paddingLeft: 40,
-    paddingRight: 10,
-    width: '100%',
-    marginTop: 10,
-    marginBottom: 10,
-  },
   username: {
     fontWeight: 'bold',
+  },
+  commentsContainer: {
+    paddingHorizontal: 10,
+    marginTop: 10,
+  },
+  commentUsername: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginBottom: 4,
+  },
+  commentText: {
+    fontSize: 14,
+    color: '#333',
+    marginBottom: 4,
+  },
+  commentDate: {
+    fontSize: 12,
+    color: '#666',
   },
 });

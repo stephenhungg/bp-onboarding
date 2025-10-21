@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Logo from '@/components/Logo';
 import PostScreen from '@/screens/PostScreen';
@@ -14,20 +14,14 @@ export default function PostStackNavigator() {
         component={PostScreen}
         options={{
           headerTitle: () => (
-            <View
-              style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}
-            >
-              <View style={{ marginTop: -2 }}>
+            <View style={styles.headerTitle}>
+              <View style={styles.logoContainer}>
                 <Logo />
               </View>
-              <View style={{ marginBottom: 15 }}>
-                <Text style={{ fontSize: 17, fontWeight: '600' }}>
-                  <Text style={{ color: '#007AFF' }}>blueprint</Text>
-                  <Text style={{ color: '#000' }}> blog</Text>
+              <View style={styles.titleContainer}>
+                <Text style={styles.titleText}>
+                  <Text style={styles.blueText}>blueprint</Text>
+                  <Text style={styles.blackText}> blog</Text>
                 </Text>
               </View>
             </View>
@@ -37,3 +31,27 @@ export default function PostStackNavigator() {
     </PostStack.Navigator>
   );
 }
+
+const styles = StyleSheet.create({
+  headerTitle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  logoContainer: {
+    marginTop: -2,
+  },
+  titleContainer: {
+    marginBottom: 15,
+  },
+  titleText: {
+    fontSize: 17,
+    fontWeight: '600',
+  },
+  blueText: {
+    color: '#007AFF',
+  },
+  blackText: {
+    color: '#000',
+  },
+});
